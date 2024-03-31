@@ -17,14 +17,18 @@ ipv4 adderss 192.168.5.1
 ## Network > wireless
 remove all
 ### LAN AP
-Add ESSID OpenWrt_wr703n
+Add Master
 ```
+ESSID OpenWrt_wr703n
 firewall-zone wan
 mode:access point
 wireless securlity:WPA2-PSK
 key: 00000000
 
 ``` 
+### WAN Client
+Scan WIFI
+connect to wifi
 
 ## Network > firewall
 取消勾選 SYN-flood protection
